@@ -4,16 +4,146 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bus Ticket Landing Page</title>
+
+  <!-- font raleway -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- daisyUI and tailwind-->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body>
-  <header>
+<body class="bg-white">
 
+    <!-- navbar start -->
+    <header class="lg:px-32 px-4 pt-14 " >
+      <div class="navbar flex justify-between">
+        <div class="navbar-start">
+          <h1 class="text-4xl font-bold text-gray-700">S-Ticket</h1>
+        </div>
+        <div class="navbar flex">
+          <ul class="menu menu-horizontal text-black px-14">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end flex gap-1  bg-green-200 w-32 h-14 rounded-2xl px-7 py-4">
+          <p class="text-green-500"  >Bus</p>
+          <img src="images/bus-icon.png" alt="">
+        </div>
+      </div>
+
+    <!-- Banner Start -->
+    <div class="hero min-h-screen rounded-3xl mt-9" style="background-image: url('images/banner.png');">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content gap-5 text-center text-neutral-content">
+        <div class="max-w ">
+          <h1 class="mb-5 text-6xl font-bold text-white">All the way first class</h1>
+          <p class="m-5 font-semibold text-5xl text-green-500">Siam Paribahan</p>
+          <p class="text-xl text-white">Siam Paribahan is apparently a family owned transport company <br> specializing 
+            in transportation of passenger bus services since 1990. </p>
+          <button class="btn text-black mt-8 bg-green-400">Buy Ticket </button>
+        </div>
+      </div>
+    </div>
   </header>
+  <!-- main start -->
   <main>
+    <!-- Best offers  --> 
+    <section class="">
+          <h3 class="text-4xl font-semibold text-black ml-32 mt-28 mb-11 justify-center flex " >Best offers for you</h3>
+          <div class="flex ">
+            <div>
+        <div class="flex ml-32">
+          <div class="card lg:card-side  rounded-tr-3xl rounded-br-3xl bg-yellow-400 shadow-xl">
+            <div class="card-body p-12">
+              <h2 class="card-title text-black">15% OFF</h2>
+              <p class="text-gray-700">on your next purchase</p>
+               <p class="text-gray-400">use by March 2024</p>
+            </div>
+          </div>
+          <div class="card lg:card-side rounded-tl-3xl rounded-bl-3xl bg-yellow-400 shadow-xl">
+            <div class="card-body p-16">
+              <h2 class="card-title text-black">NEW15</h2>
+              <p class="text-gray-400">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!--  -->
+  
+        <div class="">
+          <div class="flex ml-32">
+            <div class="card lg:card-side rounded-tr-3xl rounded-br-3xl bg-pink-300 shadow-xl">
+              <div class="card-body p-12">
+                <h2 class="card-title text-black">20% OFF</h2>
+                <p class="text-gray-700">on your next purchase</p>
+                 <p class="text-gray-400">use by March 2024</p>
+              </div>
+            </div>
+            <div class="card lg:card-side rounded-tl-3xl rounded-bl-3xl bg-pink-300 shadow-xl">
+              <div class="card-body p-16">
+                <h2 class="card-title text-black">Couple 20</h2>
+                <p class="text-gray-400">Coupon Code</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-actions justify-center mt-16 ">
+        <button class="btn bg-white rounded-lg mb-32">See All Offers</button>
+      </div>
+    </section>
+    <section class="bg-gray-200">
+      <!-- ticket start  -->
+      <h2 class="text-4xl font-semibold text-black ml-32 mt-28 mb-11 justify-center flex " >S Paribahan</h2>
+      <p class="text-xl font-medium text-black ml-32 mb-11 justify-center flex " >we were able to introduce the 1st ever Air- Conditioned bus services in Bangladesh. </p>
+      
+     <div class="m-32 rounded-lg">
+      <div class="flex justify-around items-center bg-white">
+        <div class="flex-col mr- mt-5 gap-6">
+          <div class="flex justify-around">
+            <div class="flex gap-2">
+              <div>
+                <img src="images/bus-logo.png" alt="">
+              </div>
+              <div>
+                <p class="text-xl font-thin text-black" >Siam Paribahan</p>
+                <p>Coach-075-WEB || Business-Class</p>
+              </div>
+            </div>
+            <div class="bg-green-200 w-44 flex justify-center items-center rounded-lg h-14">
+              <img src="images/seat-green.png" class="w-8 h-8">
+              <p class="text-green-500">40 Seats left</p>
+            </div>
+          </div>
+          <div class="p-4 mt-5  bg-gray-200">
+            <p>Route          Dhaka-Sylhet</p>
+            <p>Departure Time       9:00pm</p>
+            <button class="btn p-2 bg-gray-300 border-none">Boarding Point-Laxmipur </button>
+            <button class="btn p-2 bg-gray-300 border-none">Dropping Point-Bogra </button>
+            <button class="btn p-2 bg-gray-300 border-none">Est.Time - 11 Hour </button>
+          </div>
+        </div>
+        <div class="flex-col justify-center flex  items-center">
+          <img src="images/fare.png" class="w-7 h-7">
+          <p class="font-medium text-gray-700">550 Taka</p>
+           <p>Per Seat</p>
+        </div>
+       </div>
+     </div>
+    </section>
+    <!-- Select Your Ticket -->
+    <section>
 
+      
+    </section>
   </main>
   <footer>
-    
+
   </footer>
 </body>
 </html>
