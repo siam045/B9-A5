@@ -137,9 +137,143 @@
      </div>
     </section>
     <!-- Select Your Ticket -->
-    <section>
+    <section class="pl-32 bg-gray-100">
+      <p class="font-semibold">Select Your Seat</p>
+      <div class="flex justify-between">
+        <div class="flex">
+          <img src="images/seat-gray.png" class="w-5 h-5 ">
+          <p>Available</p>
+        </div>
+        <div class="flex mr-32">
+          <img src="images/seat-green-filled.png" class="w-5 h-5">
+          <p>Selected</p>
+        </div>
+      </div>
+      <div class="">
+        <img src="images/staring.png" class="w-20   h-10">
+      </div>
+<!-- table start -->
+      <div class="grid-cols-2 grid">
+        <div class="gap-y-8 grid-cols-4  bg-white rounded-lg gap-x-8">
+          <p>A</p>
+          <kbd class="kbd bg-gray-50 w-28 h-14">A1</kbd>
+          <kbd class="kbd bg-gray-50 w-28 h-14">A2</kbd>
+          <kbd class="kbd bg-gray-50 w-28 h-14">A3</kbd>
+          <kbd class="kbd bg-gray-50 w-28 h-14">A4</kbd>
+        
+          
+            <P>B</P>
+          <kbd class="kbd bg-gray-50 w-28 h-14">B1</kbd>
+          <kbd class="kbd bg-gray-50 w-28 h-14">B2</kbd>
+          <kbd class="kbd bg-gray-50 w-28 h-14">B3</kbd>
+          <kbd class="kbd bg-gray-50 w-28 h-14">B4</kbd>
+          
+          <P>C</P>
+          <kbd class="kbd bg-gray-50 w-28 h-14">C1</kbd> 
+          <kbd class="kbd bg-gray-50 w-28 h-14">C2</kbd>
+          <kbd class="kbd bg-gray-50 w-28 h-14">C3</kbd>
+          <kbd class="kbd bg-gray-50 w-28 h-14">C4</kbd>
+          <P>D</P>
+          <kbd class="kbd w-28 bg-gray-50 h-14">D1</kbd>
+          <kbd class="kbd w-28 bg-gray-50 h-14">D2</kbd>
+          <kbd class="kbd w-28 bg-gray-50 h-14">D3</kbd>
+          <kbd class="kbd w-28 bg-gray-50 h-14">D4</kbd>
+          <p>E</p>
+          <kbd class="kbd w-28 bg-gray-50 h-14">E1</kbd>
+          <kbd class="kbd w-28 bg-gray-50 h-14">E2</kbd>
+          <kbd class="kbd w-28 bg-gray-50 h-14">E3</kbd>
+          <kbd class="kbd w-28 bg-gray-50 h-14">E4</kbd>
+          <P>F</P>
+          <kbd class="kbd bg-gray-50 w-28 h-14">F1</kbd>
+          <kbd class="kbd bg-gray-50 w-28 h-14">F2</kbd>
+          <kbd class="kbd bg-gray-50 w-28 h-14">F3</kbd>
+          <kbd class="kbd bg-gray-50 w-28 h-14">F4</kbd>
+          <P>G</P>
+          <kbd class="kbd w-28 bg-gray-50 h-14">G1</kbd>
+          <kbd class="kbd w-28 bg-gray-50 h-14">G2</kbd>
+          <kbd class="kbd w-28 bg-gray-50 h-14">G3</kbd>
+          <kbd class="kbd w-28 bg-gray-50 h-14">G4</kbd>
+          <P>H</P>
+          <kbd class="kbd bg-gray-50 w-28 h-14">H1</kbd>
+          <kbd class="kbd bg-gray-50 w-28 h-14">H2</kbd>
+          <kbd class="kbd bg-gray-50 w-28 h-14">H3</kbd>
+          <kbd class="kbd bg-gray-50 w-28 h-14">H4</kbd>
+          <P>I</P>
+          <kbd class="kbd bg-gray-50 w-28 h-14">I1</kbd>
+          <kbd class="kbd bg-gray-50 w-28 h-14">I2</kbd>
+          <kbd class="kbd bg-gray-50 w-28 h-14">I3</kbd>
+          <kbd class="kbd bg-gray-50 w-28 h-14">I4</kbd>
+          <P>J</P>
+          <kbd class="kbd bg-gray-50 w-28 h-14">J1</kbd>
+          <kbd class="kbd bg-gray-50 w-28 h-14">J2</kbd>
+          <kbd class="kbd bg-gray-50 w-28 h-14">J3</kbd>
+          <kbd class="kbd bg-gray-50 w-28 h-14">J4</kbd>
+        </div>
+        <div>
+          <div class="mr-32">
+            <table class="table ">
+    
+              <tbody>
+                <!-- row 1 -->
+                <tr>
+                  <th>Seat</th>
+                  <td>Class</td>
+                  <td>Price</td>
+                </tr>
+                <!-- row 2 -->
+                <tr>
+                  <th>C2</th>
+                  <td>Economy</td>>
+                  <td>550</td>
+                </tr>
+                <!-- row 3 -->
+                <tr>
+                  <th>C3</th>
+                  <td>Economy</td>>
+                  <td>550</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--  -->
+          <div class=" w-full bg-white">
+            <div class="mr-32 ">
+         <div class="card   shadow-2xl bg-white">
+                <form class="card-body">
+                  <div class="">
+                    <label class="label">
+                      <span class="label-text">Passenger Name</span>
+                    </label>
+                    <input  placeholder="Enter your name" class="input bg-white input-bordered" required />
+                  </div>
+                  <!--  -->
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Phone Number</span>
+                    </label>
+                    <input  placeholder="Enter your phone number" class="input bg-white input-bordered" required />
+                  </div>
+                  <!--  -->
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Email ID</span>
+                    </label>
+                    <input placeholder="Enter your email id" class="input bg-white input-bordered" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button class="btn bg-green-500 text-white">Next</button>
+                  </div>
+                  <div class="flex gap-11 m-auto">
+                    <p class="text-xs underline"><a href="#">Terms and Conditions</a></p>
+                  <p class="text-xs underline"><a href="#">Cancellation Policy</a></p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      
     </section>
   </main>
   <footer>
