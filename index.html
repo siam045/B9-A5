@@ -45,7 +45,7 @@
           <p class="m-5 font-semibold text-5xl text-green-500">Siam Paribahan</p>
           <p class="text-xl text-white">Siam Paribahan is apparently a family owned transport company <br> specializing 
             in transportation of passenger bus services since 1990. </p>
-          <button class="btn text-black mt-8 bg-green-400">Buy Ticket </button>
+            <button id="buyTicketButton" class="text-black rounded-lg w-28 h-14 mt-8 bg-green-400"> <a href="#sPoribahanSection">Buy Ticket</a> </button>
         </div>
       </div>
     </div>
@@ -97,7 +97,7 @@
         <button class="btn bg-white rounded-lg mb-32">See All Offers</button>
       </div>
     </section>
-    <section class="bg-gray-200">
+    <section id="sPoribahanSection" class="bg-gray-200">
       <!-- ticket start  -->
       <h2 class="text-4xl font-semibold text-black ml-32 mt-28 mb-11 justify-center flex " >S Paribahan</h2>
       <p class="text-xl font-medium text-black ml-32 mb-11 justify-center flex " >we were able to introduce the 1st ever Air- Conditioned bus services in Bangladesh. </p>
@@ -117,7 +117,7 @@
             </div>
             <div class="bg-green-200 w-44 flex justify-center items-center rounded-lg h-14">
               <img src="images/seat-green.png" class="w-8 h-8">
-              <p class="text-green-500">40 Seats left</p>
+              <p class="text-green-500" id="seats-Left">40 Seats left</p>
             </div>
           </div>
           <div class="p-4 mt-5  bg-gray-200">
@@ -128,7 +128,7 @@
             <button class="btn p-2 bg-gray-300 border-none">Est.Time - 11 Hour </button>
           </div>
         </div>
-        <div class="flex-col justify-center flex  items-center">
+        <div id="ticket-price" class="flex-col justify-center flex items-center">
           <img src="images/fare.png" class="w-7 h-7">
           <p class="font-medium text-gray-700">550 Taka</p>
            <p>Per Seat</p>
@@ -154,60 +154,57 @@
       </div>
 <!-- table start -->
       <div class="grid-cols-2 grid">
-        <div class="gap-y-8 grid-cols-4  bg-white rounded-lg gap-x-8">
+        <div id="" class="gap-y-8 grid-cols-4 pl-7  bg-white rounded-lg gap-x-8">
           <p>A</p>
-          <kbd class="kbd bg-gray-50 w-28 h-14">A1</kbd>
-          <kbd class="kbd bg-gray-50 w-28 h-14">A2</kbd>
-          <kbd class="kbd bg-gray-50 w-28 h-14">A3</kbd>
-          <kbd class="kbd bg-gray-50 w-28 h-14">A4</kbd>
-        
-          
+          <button class="btn bg-gray-50 w-28 h-14">A1</button>
+          <button class="btn bg-gray-50 w-28 h-14">A2</button>
+          <button class="btn bg-gray-50 w-28 h-14">A3</button>
+          <button class="btn bg-gray-50 w-28 h-14">A4</button>
             <P>B</P>
-          <kbd class="kbd bg-gray-50 w-28 h-14">B1</kbd>
-          <kbd class="kbd bg-gray-50 w-28 h-14">B2</kbd>
-          <kbd class="kbd bg-gray-50 w-28 h-14">B3</kbd>
-          <kbd class="kbd bg-gray-50 w-28 h-14">B4</kbd>
-          
+            <button class="btn bg-gray-50 w-28 h-14">B1</button>
+            <button class="btn bg-gray-50 w-28 h-14">B2</button>
+            <button class="btn bg-gray-50 w-28 h-14">B3</button>
+            <button class="btn bg-gray-50 w-28 h-14">B4</button>
           <P>C</P>
-          <kbd class="kbd bg-gray-50 w-28 h-14">C1</kbd> 
-          <kbd class="kbd bg-gray-50 w-28 h-14">C2</kbd>
-          <kbd class="kbd bg-gray-50 w-28 h-14">C3</kbd>
-          <kbd class="kbd bg-gray-50 w-28 h-14">C4</kbd>
+          <button onclick="myButton()" id="C1"  class="btn  bg-gray-50 w-28 h-14">C1</button>
+          <button onclick="myButton()" id="C2"  class="btn  bg-gray-50 w-28 h-14">C2</button>
+          <button onclick="myButton()" id="C3"  class="btn  bg-gray-50 w-28 h-14">C3</button>
+          <button onclick="myButton()" id="C4"  class="btn  bg-gray-50 w-28 h-14">C4</button>
           <P>D</P>
-          <kbd class="kbd w-28 bg-gray-50 h-14">D1</kbd>
-          <kbd class="kbd w-28 bg-gray-50 h-14">D2</kbd>
-          <kbd class="kbd w-28 bg-gray-50 h-14">D3</kbd>
-          <kbd class="kbd w-28 bg-gray-50 h-14">D4</kbd>
+          <button onclick="myButton()" id="D1" class="btn  bg-gray-50 w-28 h-14">D1</button>
+          <button onclick="myButton()" id="D2" class="btn  bg-gray-50 w-28 h-14">D2</button>
+          <button onclick="myButton()" id="D3" class="btn  bg-gray-50 w-28 h-14">D3</button>
+          <button onclick="myButton()" id="D4" class="btn  bg-gray-50 w-28 h-14">D4</button>
           <p>E</p>
-          <kbd class="kbd w-28 bg-gray-50 h-14">E1</kbd>
-          <kbd class="kbd w-28 bg-gray-50 h-14">E2</kbd>
-          <kbd class="kbd w-28 bg-gray-50 h-14">E3</kbd>
-          <kbd class="kbd w-28 bg-gray-50 h-14">E4</kbd>
+          <button class="btn bg-gray-50 w-28 h-14">E1</button>
+          <button class="btn bg-gray-50 w-28 h-14">E2</button>
+          <button class="btn bg-gray-50 w-28 h-14">E3</button>
+          <button class="btn bg-gray-50 w-28 h-14">E4</button>
           <P>F</P>
-          <kbd class="kbd bg-gray-50 w-28 h-14">F1</kbd>
-          <kbd class="kbd bg-gray-50 w-28 h-14">F2</kbd>
-          <kbd class="kbd bg-gray-50 w-28 h-14">F3</kbd>
-          <kbd class="kbd bg-gray-50 w-28 h-14">F4</kbd>
+          <button class="btn bg-gray-50 w-28 h-14">F1</button>
+          <button class="btn bg-gray-50 w-28 h-14">F2</button>
+          <button class="btn bg-gray-50 w-28 h-14">F3</button>
+          <button class="btn bg-gray-50 w-28 h-14">F4</button>
           <P>G</P>
-          <kbd class="kbd w-28 bg-gray-50 h-14">G1</kbd>
-          <kbd class="kbd w-28 bg-gray-50 h-14">G2</kbd>
-          <kbd class="kbd w-28 bg-gray-50 h-14">G3</kbd>
-          <kbd class="kbd w-28 bg-gray-50 h-14">G4</kbd>
+          <button class="btn bg-gray-50 w-28 h-14">G1</button>
+          <button class="btn bg-gray-50 w-28 h-14">G2</button>
+          <button class="btn bg-gray-50 w-28 h-14">G3</button>
+          <button class="btn bg-gray-50 w-28 h-14">G4</button>
           <P>H</P>
-          <kbd class="kbd bg-gray-50 w-28 h-14">H1</kbd>
-          <kbd class="kbd bg-gray-50 w-28 h-14">H2</kbd>
-          <kbd class="kbd bg-gray-50 w-28 h-14">H3</kbd>
-          <kbd class="kbd bg-gray-50 w-28 h-14">H4</kbd>
+          <button class="btn bg-gray-50 w-28 h-14">H1</button>
+          <button class="btn bg-gray-50 w-28 h-14">H2</button>
+          <button class="btn bg-gray-50 w-28 h-14">H3</button>
+          <button class="btn bg-gray-50 w-28 h-14">H4</button>
           <P>I</P>
-          <kbd class="kbd bg-gray-50 w-28 h-14">I1</kbd>
-          <kbd class="kbd bg-gray-50 w-28 h-14">I2</kbd>
-          <kbd class="kbd bg-gray-50 w-28 h-14">I3</kbd>
-          <kbd class="kbd bg-gray-50 w-28 h-14">I4</kbd>
+          <button class="btn bg-gray-50 w-28 h-14">I1</button>
+          <button class="btn bg-gray-50 w-28 h-14">I2</button>
+          <button class="btn bg-gray-50 w-28 h-14">I3</button>
+          <button class="btn bg-gray-50 w-28 h-14">I4</button>
           <P>J</P>
-          <kbd class="kbd bg-gray-50 w-28 h-14">J1</kbd>
-          <kbd class="kbd bg-gray-50 w-28 h-14">J2</kbd>
-          <kbd class="kbd bg-gray-50 w-28 h-14">J3</kbd>
-          <kbd class="kbd bg-gray-50 w-28 h-14">J4</kbd>
+          <button class="btn bg-gray-50 w-28 h-14">J1</button>
+          <button class="btn bg-gray-50 w-28 h-14">J2</button>
+          <button class="btn bg-gray-50 w-28 h-14">J3</button>
+          <button class="btn bg-gray-50 w-28 h-14">J4</button>
         </div>
         <div>
           <div class="mr-32">
@@ -216,31 +213,51 @@
               <tbody>
                 <!-- row 1 -->
                 <tr>
-                  <th>Seat</th>
+                  <th>Seat <span id="seat-count">0</span></th>
                   <td>Class</td>
                   <td>Price</td>
                 </tr>
                 <!-- row 2 -->
+                <div id="sWithTakaeat">
+                  <tr>
+                    <th>C2</th>
+                    <td>Economy</td>
+                    <td>550</td>
+                  </tr>
+                  <!-- row 3 -->
+                  <tr>
+                    <th>C3</th>
+                    <td>Economy</td>
+                    <td>550</td>
+                  </tr>
+                </div>
+                <!-- row 4 -->
                 <tr>
-                  <th>C2</th>
-                  <td>Economy</td>>
-                  <td>550</td>
+                  <th>Total</th>
+                  <td></td>
+                  <td>BDT<span>0</span></td>
                 </tr>
-                <!-- row 3 -->
+                <!-- row 5 -->
                 <tr>
-                  <th>C3</th>
-                  <td>Economy</td>>
-                  <td>550</td>
+                  <th><input type="text" placeholder="Have any copupon?" class="input bg-white w-full" /></th>
+                  <td></td>
+                  <td><button class="applyBtn w-28 h-14 bg-green-500 text-white rounded-lg">Apply</button></td>
+                </tr>
+                <!-- row 6 -->
+                <tr>
+                  <th>Grand Total</th>
+                  <td></td>
+                  <td>BDT<span>0</span></td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <!--  -->
+          <!-- input-->
           <div class=" w-full bg-white">
             <div class="mr-32 ">
          <div class="card   shadow-2xl bg-white">
                 <form class="card-body">
-                  <div class="">
+                  <div class="form-control">
                     <label class="label">
                       <span class="label-text">Passenger Name</span>
                     </label>
@@ -279,5 +296,8 @@
   <footer>
 
   </footer>
+  <script src="script/bus ticket.js">
+
+  </script>
 </body>
 </html>
